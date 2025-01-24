@@ -1,0 +1,20 @@
+{{!< main}}
+
+<h2 class="text-center mb-4">Available Rentals</h2>
+<div class="row">
+    {{#each products}}
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="{{this.thumbnails.[0]}}" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.title}}</h5>
+                    <p class="card-text">Category: <strong>{{this.category}}</strong></p>
+                    <p class="card-text">Price: <strong>${{this.price}}</strong></p>
+                    <p class="card-text">Stock: <strong>{{this.stock}} available</strong></p>
+                    <a href="#" class="btn btn-primary">Rent Now</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
+

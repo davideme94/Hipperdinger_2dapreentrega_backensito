@@ -1,0 +1,21 @@
+{{!< main}}
+
+<h2 class="text-center mb-4">User Carts</h2>
+<div class="row">
+    {{#each carts}}
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Cart ID: {{this._id}}</h5>
+                    <p>User ID: <strong>{{this.userId}}</strong></p>
+                    <h6>Products:</h6>
+                    <ul class="list-group">
+                        {{#each this.products}}
+                            <li class="list-group-item">Product ID: {{this.productId}}, Quantity: {{this.quantity}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
