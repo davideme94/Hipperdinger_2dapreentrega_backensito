@@ -60,3 +60,7 @@ http://localhost:8080/ (HOME)
 http://localhost:8080/products (PRODUCTS)
 http://localhost:8080/carts (CART)
 http://localhost:8080/users ( USERS)
+
+
+
+SE LE AGREGARON LAS VISTAS PARA AGREGAR PRODUCTOS Y SE ACTUALIZA EN TIEMPO REAL
