@@ -47,33 +47,16 @@ E-COMMERCE/
 
 
 
-Probar la API en Thunder Client ( ES LA QUE SE USO PARA PROBAR)
-
-🔹 Productos (/api/products)
-Método	Endpoint	Descripción	Ejemplo de uso
-POST	/api/products	Crear un producto	Enviar un JSON con title, category, thumbnails, price, stock
-GET	/api/products	Obtener todos los productos	Navegar a http://localhost:8080/api/products
-GET	/api/products/:pid	Obtener un producto por ID	http://localhost:8080/api/products/66da9905-631a-4def-8daa-8925cd01454d
-PUT	/api/products/:pid	Actualizar un producto	Enviar un JSON con los campos a modificar
-DELETE	/api/products/:pid	Eliminar un producto	Enviar el ID del producto a eliminar
+Probar la API en Thunder Client ( ES LA QUE SE USO PARA PROBAR), POSTMAN o en el navegador:
 
 
-📌 Endpoints para users (Usuarios)
-Estos endpoints permiten crear, obtener y administrar usuarios.
-
-Método	Endpoint	Descripción	Ejemplo de uso
-POST	/api/users	Crear un usuario	Enviar un JSON con name, email, role
-GET	/api/users	Obtener todos los usuarios	Navegar a http://localhost:8080/api/users
-GET	/api/users/:uid	Obtener un usuario por ID	http://localhost:8080/api/users/12345
-PUT	/api/users/:uid	Actualizar un usuario	Enviar un JSON con los datos a modificar
-DELETE	/api/users/:uid	Eliminar un usuario	Enviar el ID del usuario a eliminar
 
 
-Método	Endpoint	Descripción	Ejemplo de uso
-POST	/api/carts/:uid/products/:pid	Agregar un producto al carrito del usuario	Enviar un JSON con quantity
-GET	/api/carts/:cid	Obtener los productos de un carrito	http://localhost:8080/api/carts/12345
-DELETE	/api/carts/:cid/products/:pid	Eliminar un producto del carrito	Enviar cid (ID del carrito) y pid (ID del producto)
 
 
-ver imagenes probando la API con thunderclient
-(https://drive.google.com/drive/folders/1IeDtFuWMVvq1z7cBReciAFyqmAfW9DYx?usp=sharing)
+PAGINA CON VISTAS INCLUIDAS: 
+
+http://localhost:8080/ (HOME)
+http://localhost:8080/products (PRODUCTS)
+http://localhost:8080/carts (CART)
+http://localhost:8080/users ( USERS)
